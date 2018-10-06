@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstPrac</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="brand_logo">Brand Logo</string>
+    <string name="login">Login</string>
+</resources>
