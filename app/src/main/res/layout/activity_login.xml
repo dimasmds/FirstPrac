@@ -8,59 +8,38 @@
     android:background="@color/colorPrimary"
     tools:context=".LoginActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
         <ImageView
-            android:id="@+id/imageViewBrandIcon"
             android:layout_width="200dp"
             android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
             android:src="@drawable/ic_brand"
-            android:contentDescription="@string/brand_logo"/>
-        <TextView
-            android:id="@+id/textViewEmail"
-            android:layout_below="@id/imageViewBrandIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:text="@string/email"/>
-
+            android:contentDescription="@string/brand_logo" />
         <EditText
             android:id="@+id/editTextEmail"
-            android:inputType="textEmailAddress"
-            android:layout_below="@id/textViewEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:labelFor="@id/textViewEmail"/>
-
-        <TextView
-            android:id="@+id/textViewPassword"
-            android:layout_below="@id/editTextEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@string/password"/>
-
+            style="@style/EditTextPrimary"
+            android:layout_marginTop="50dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
         <EditText
             android:id="@+id/editTextPassword"
-            android:layout_below="@id/textViewPassword"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:labelFor="@id/textViewPassword"/>
-
+            style="@style/EditTextPrimary"
+            android:layout_marginTop="15dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_below="@+id/editTextPassword"
-            android:background="@color/colorAccent"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login"/>
-    </RelativeLayout>
-
-
+            android:background="@drawable/btn_rounded_corner"
+            android:textColor="@android:color/white"
+            android:text="@string/login"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
 </RelativeLayout>
