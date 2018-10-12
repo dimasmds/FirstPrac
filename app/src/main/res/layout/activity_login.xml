@@ -23,22 +23,19 @@
             android:contentDescription="@string/brand_logo" />
         <EditText
             android:id="@+id/editTextEmail"
-            style="@style/EditTextPrimary"
+            style="@style/EditTextFormStyle"
             android:layout_marginTop="50dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"/>
         <EditText
             android:id="@+id/editTextPassword"
-            style="@style/EditTextPrimary"
+            style="@style/EditTextFormStyle"
             android:layout_marginTop="15dp"
             android:hint="@string/password"
             android:inputType="textPassword"/>
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btn_rounded_corner"
-            android:textColor="@android:color/white"
+            style="@style/ButtonFormStyle"
             android:text="@string/login"
             android:layout_marginTop="30dp"/>
     </LinearLayout>

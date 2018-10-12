@@ -9,7 +9,7 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 
-    <style name="EditTextPrimary">
+    <style name="EditTextFormStyle">
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
         <item name="android:paddingLeft">20dp</item>
@@ -20,6 +20,13 @@
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/txtedit_rounded_corner</item>
+    </style>
+
+    <style name="ButtonFormStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_rounded_corner</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>
