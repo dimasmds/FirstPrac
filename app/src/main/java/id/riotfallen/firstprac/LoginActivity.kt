@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.startActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -22,6 +23,10 @@ class LoginActivity : AppCompatActivity() {
 
             val massage: String = if(isAuthValid) "Success" else "false"
             Toast.makeText(this@LoginActivity, "Login $massage", Toast.LENGTH_SHORT).show()
+        }
+
+        buttonRegisterHere.setOnClickListener {
+            startActivity<RegisterActivity>()
         }
     }
 }

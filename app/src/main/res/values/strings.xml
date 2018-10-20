@@ -4,4 +4,10 @@
     <string name="password">Password</string>
     <string name="brand_logo">Brand Logo</string>
     <string name="login">Login</string>
+    <string name="not_a_member">Not a Member?</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="ages">Ages</string>
+    <string name="let_s_join">Let\'s Join</string>
+    <string name="re_type_password">Re-type Password</string>
 </resources>
