@@ -10,4 +10,8 @@
     <string name="ages">Ages</string>
     <string name="let_s_join">Let\'s Join</string>
     <string name="re_type_password">Re-type Password</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="productimage">ProductImage</string>
 </resources>

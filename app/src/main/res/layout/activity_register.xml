@@ -58,6 +58,7 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:maxLength="3"
                 android:inputType="numberDecimal"
                 android:hint="@string/ages" />
         </android.support.design.widget.TextInputLayout>
