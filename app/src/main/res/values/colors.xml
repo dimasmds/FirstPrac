@@ -5,4 +5,9 @@
     <color name="colorAccent">#2e7d32</color>
 
     <color name="colorTextPrimary">#1a1a1a</color>
+
+    <color name="colorOnStock">#4BB543</color>
+    <color name="colorLimitStock">#ffae42</color>
+    <color name="colorOutOfStock">#cc0000</color>
+    <color name="colorFadeBlack">#75000000</color>
 </resources>

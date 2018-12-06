@@ -1,10 +1,8 @@
-package id.riotfallen.firstprac
+package id.riotfallen.firstprac.activity
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import id.riotfallen.core.Utils
+import id.riotfallen.firstprac.R
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast

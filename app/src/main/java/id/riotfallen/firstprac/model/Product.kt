@@ -1,3 +1,3 @@
 package id.riotfallen.firstprac.model
 
-data class Product(val name: String, val price: Int, val quantity: Int, val imgUrl: String)
+data class Product(val name: String, val description: String, val price: Double, val quantity: Int, val imgUrl: String)

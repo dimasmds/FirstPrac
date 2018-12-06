@@ -1,7 +1,8 @@
-package id.riotfallen.firstprac
+package id.riotfallen.firstprac.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import id.riotfallen.firstprac.R
 import kotlinx.android.synthetic.main.activity_register.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.toast
