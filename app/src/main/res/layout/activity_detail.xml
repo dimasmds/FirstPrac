@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detailActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/detailActivityImageProduk"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/image_product" />
+    <ImageView
+        android:id="@+id/detailActivityImageViewSold"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="center"
+        android:background="@color/colorFadeBlack"
+        android:src="@drawable/ic_sold"
+        android:contentDescription="@string/productimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailActivityImageProduk"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailActivityTextViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neo_sans"
+            android:text="@string/title_produk"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailActivityTextViewHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/rp_20_000" />
+
+        <TextView
+            android:id="@+id/detailActivityTextViewStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/available_stock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/neo_sans"
+            android:text="@string/description" />
+
+        <TextView
+            android:id="@+id/detailActivityTextViewDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -2,6 +2,8 @@ package id.riotfallen.firstprac.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
+import android.support.design.widget.Snackbar
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -13,6 +15,7 @@ import android.widget.TextView
 import com.squareup.picasso.Picasso
 import id.riotfallen.core.Utils
 import id.riotfallen.firstprac.R
+import id.riotfallen.firstprac.activity.DetailActivity
 import id.riotfallen.firstprac.model.Product
 import org.jetbrains.anko.textColor
 
@@ -29,13 +32,20 @@ class ProductAdapter(private val context: Context,
 
     override fun onBindViewHolder(holder: ProductListViewHolder, position: Int) {
         holder.bindItem(product[position])
+        holder.itemView.setOnClickListener {
+            product[position].name?.let { it1 -> Snackbar.make(holder.itemView, it1, Snackbar.LENGTH_SHORT).show() }
+
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("DATA_PRODUCT", product[position])
+            context.startActivity(intent)
+        }
     }
 
 
     class ProductListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val imageViewProduct: ImageView = view.findViewById(R.id.imageViewProduct)
         private val imageViewSold: ImageView = view.findViewById(R.id.imageViewSold)
-        private val textViewNamaPruduk: TextView = view.findViewById(R.id.textViewNamaProduk)
+        private val textViewNamaProduk: TextView = view.findViewById(R.id.textViewNamaProduk)
         private val textViewHarga: TextView = view.findViewById(R.id.textViewPrice)
         private val textViewQuantity: TextView = view.findViewById(R.id.textViewQuantity)
         private val textViewDesc: TextView = view.findViewById(R.id.textDescription)
@@ -43,7 +53,7 @@ class ProductAdapter(private val context: Context,
         @SuppressLint("SetTextI18n")
         fun bindItem(product: Product) {
             textViewHarga.text = Utils.Currency().doubleToCurrencyFormat(product.price)
-            textViewNamaPruduk.text = product.name
+            textViewNamaProduk.text = product.name
             textViewDesc.text = product.description
             Picasso.get().load(product.imgUrl).fit().centerCrop().into(imageViewProduct)
 

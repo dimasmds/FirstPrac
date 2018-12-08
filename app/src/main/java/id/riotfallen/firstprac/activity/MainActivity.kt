@@ -36,6 +36,12 @@ class MainActivity : AppCompatActivity() {
         productList.add(Product("Adidas Men's X 16.2 FG", descriptionText,239500.00, 0,
                 "https://pixel.nymag.com/imgs/daily/strategist/2018/06/15/soccer-cleats/Copa-blackout.w710.h473.2x.jpg"))
 
+        productList.add(Product("Fifa's new ball for World Cup 2018", descriptionText,5920000.00, 10,
+                "https://images.indianexpress.com/2018/03/adidas-wc-ball-759.jpg"))
+
+        productList.add(Product("Nike Blue Chelsea FC", descriptionText,210000.00, 0,
+                "https://cdna.lystit.com/1200/630/tr/photos/jdsports/6c9c5298/nike-Blue-Chelsea-Fc-H86-Cap.jpeg"))
+
         recyclerViewMain.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
         recyclerViewMain.adapter = ProductAdapter(this, productList)
 
